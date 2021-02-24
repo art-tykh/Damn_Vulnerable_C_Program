@@ -60,7 +60,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       CC=afl-gcc ./configure
+       apt-get install afl
        make
 
     - name: Perform CodeQL Analysis
