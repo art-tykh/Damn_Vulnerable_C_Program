@@ -60,6 +60,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
+       CC=afl-gcc ./configure
        make
 
     - name: Perform CodeQL Analysis
